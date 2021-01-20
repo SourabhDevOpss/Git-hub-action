@@ -1,0 +1,19 @@
+name:  Shell Commands
+
+on: [push]
+
+jobs:
+  run-shell-commands
+  
+  runs-on: ubuntu-latest
+  
+  steps:
+    - name: single line command
+      run: echo "this is a single line scirpt"
+    - name: multiple line command
+      run: |
+        node -v
+        npm -v
+      
+
+
