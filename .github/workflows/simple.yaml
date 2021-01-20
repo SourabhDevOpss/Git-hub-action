@@ -5,8 +5,7 @@ on: [push]
 jobs:
   run-shell-commands
   
-  runs-on: ubuntu-latest
-
+  runs-on: ubuntu
   steps:
     - name: single line command
       run: echo "this is a single line scirpt"
@@ -14,6 +13,7 @@ jobs:
       run: |
         node -v
         npm -v
+        javac -version
       
 
 
