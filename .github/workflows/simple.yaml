@@ -3,7 +3,7 @@ name:  Shell Commands
 on: [push]
 
 jobs:
-  run-shell-commands
+  run-shell-commands:
   
   runs-on: ubuntu
   steps:
@@ -13,7 +13,7 @@ jobs:
       run: |
         node -v
         npm -v
-        javac -version
+      
       
 
 
